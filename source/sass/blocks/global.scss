@@ -21,3 +21,33 @@ img {
 .visually-hidden {
   @include visually-hidden;
 }
+
+/*.wrapper {
+  position: relative;
+}
+
+.wrapper::before {
+  content: "";
+  position: absolute;
+  width: 229px;
+  height: 685px;
+  left: -26px;
+  bottom: 436px;
+  background-image: url("../img/girl-run.png");
+  background-repeat: no-repeat;
+  background-size: 229px 685px;
+  z-index: 1;
+}
+
+.wrapper::after {
+  content: "";
+  position: absolute;
+  width: 289px;
+  height: 677px;
+  right: -36px;
+  bottom: 446px;
+  background-image: url("../img/man-run.png");
+  background-repeat: no-repeat;
+  background-size: 289px 677px;
+  z-index: 1;
+}*/
