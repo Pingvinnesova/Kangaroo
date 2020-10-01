@@ -1,0 +1,22 @@
+.nav__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 0;
+  @include list-reset;
+}
+
+.nav__link {
+  padding: 10px 15px;
+  margin-bottom: 10px;
+  font-family: "RobotoCondensedRegular", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 16px;
+  color: $white;
+  text-decoration: none;
+
+  &:hover,
+  &:focus {
+    background-color: rgba(#ffd1fc, 0.3);
+  }
+}

@@ -1,0 +1,25 @@
+.footer {
+  width: 100%;
+  background-color: black;
+  background-image: url("../img/background-footer.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 1920px 600px;
+}
+
+.footer__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1366px;
+  box-sizing: border-box;
+  padding: 30px 100px 30px 100px;
+  margin: 0 auto;
+}
+
+.footer__nav {
+  width: 790px;
+}
+.footer__social {
+  width: 100px;
+}

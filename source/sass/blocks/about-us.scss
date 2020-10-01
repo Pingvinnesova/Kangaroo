@@ -1,0 +1,39 @@
+.about-us {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1366px;
+  box-sizing: border-box;
+  padding: 120px 100px;
+  margin: 0 auto;
+}
+
+.about-us__wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.about-us__text {
+  width: 450px;
+}
+
+.about-us__slider {
+  width: 649px;
+  margin-left: auto;
+}
+
+.about-us h2 {
+  @include desktop-header;
+  margin-bottom: 40px;
+}
+
+.about-us p {
+  font-family: "RobotoCondensedLight", "Arial", cursive;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.about-us__text span {
+  display: block;
+  margin-bottom: 10px;
+}

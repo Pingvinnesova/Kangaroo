@@ -1,0 +1,77 @@
+.price {
+  width: 100%;
+  background-color: $pink;
+  background-image: url("../img/background2.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 1920px 839px;
+}
+
+.price__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1 0 auto;
+  max-width: 1366px;
+  box-sizing: border-box;
+  padding: 120px 100px 120px 100px;
+  margin: 0 auto;
+}
+
+.price h2 {
+  @include desktop-header;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.price__list {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  @include list-reset;
+}
+
+.price__item {
+  margin-right: 160px;
+}
+
+.price__item:last-of-type {
+  margin-right: 0;
+}
+
+.price__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 350px;
+  height: 439px;
+  color: white;
+  text-decoration: none;
+  background-color: transparent;
+  background-image: url("../img/тренажёрный зал.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 350px 439px;
+  border: 7px solid transparent;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    border-image: linear-gradient(90deg,#ba4548 ,#5776b8);
+    border-image-slice: 1;
+  }
+}
+
+.price__item:last-of-type .price__link {
+  background-image: url("../img/фитнес-зал.jpg");
+}
+
+.price__item h3 {
+  font-family: "RobotoCondensedBold", "Arial", sans-serif;
+  font-size: 35px;
+  line-height: 40px;
+  text-align: center;
+  margin: 0;
+  padding: auto;
+}
+

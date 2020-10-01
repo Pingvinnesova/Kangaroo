@@ -1,13 +1,241 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
+
 <head>
   <meta charset="UTF-8">
+  <meta name="description" content="Фитнес-клуб «Кенгуру» в Гомеле">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Стартовый шаблон</title>
-  <link rel="stylesheet" href="css/style.css">
+  <title>Фитнес-клуб «Кенгуру» в Гомеле</title>
+  <link rel="stylesheet" href="css/style.min.css">
 </head>
+
 <body>
-  <h1>Добро пожаловать в Лигу А.</h1>
+  <div class="main-screen">
+    <header class="header">
+      <a href="index.html" class="logo">
+        <img src="img/logo_kangaroo.png" width="122" height="71" alt="Логотип фитнес-зала «Кенгуру»">
+      </a>
+      <nav class="header__nav nav">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a href="#" class="nav__link">о нас</a>
+          </li>
+          <li class="nav__item">
+            <a href="#" class="nav__link">основные направления</a>
+          </li>
+          <li class="nav__item">
+            <a href="#" class="nav__link">расписание</a>
+          </li>
+          <li class="nav__item">
+            <a href="#" class="nav__link">прейскурант</a>
+          </li>
+          <li class="nav__item">
+            <a href="#" class="nav__link">тренеры</a>
+          </li>
+          <li class="nav__item">
+            <a href="#" class="nav__link">схема проезда</a>
+          </li>
+        </ul>
+      </nav>
+      <p>
+        <span class="header__working-hours">ежедневно с 8 до 21:30</span>
+        <a href="tel:+375447218875" class="header__phone">+37544 721-88-75</a>
+      </p>
+    </header>
+    <section class="promo">
+      <div class="promo__text-wrapper">
+        <span class="promo__city">Гомель</span>
+        <h1>Фитнес клуб <span class="promo__title-name">«Кенгуру»</span></h1>
+        <a class="promo__button scroll-to" href="#timetable">Расписание</a>
+      </div>
+      <p>Быть всегда в форме - легко!</p>
+    </section>
+  </div>
+  <main>
+    <section class="about-us">
+      <div class="about-us__wrapper">
+        <div class="about-us__text">
+          <h2>Оптимальная эффективность и повышенный комфорт
+          <p>
+            <span>В «Кенгуру» осуществляют свою деятельность только высококвалифицированные и профессиональные тренеры. Они лично подберут вам необходимую нагрузку, подробно расскажут о каждом определенном виде тренировок и их пользе.</span> <span>После активного занятия вы на месте можете принять приятный расслабляющий душ в наших комфортабельных душевых кабинках.У нас предусмотрены раздевалки с закрывающимися шкафчиками.</span><span> Занимаясь с нами, вы станете стройными, подвижными и гибкими, ваши мышцы будут сильными и упругими. Вы повысите выносливость организма и укрепите свое здоровье.</span>
+          </p>
+        </h2></div>
+        <div class="about-us__slider">
+          <img src="img/gym.jpg" width="649" height="497" alt="Тренажёрный зал">
+        </div>
+      </div>
+    </section>
+    <section class="types">
+      <div class="types__wrapper">
+        <h2>Основные направления</h2>
+        <ul class="types__list">
+          <li class="types__item">
+            <div class="types__image">
+              <img src="img/zumba.jpg" width="238" height="238" alt="zumba">
+            </div>
+            <h3>Zumba</h3>
+            <p>Фитнес-направление с танцевальным уклоном, где используется латино в сочетании с элементами иных музыкальных вариантов мира.</p>
+          </li>
+          <li class="types__item">
+            <div class="types__image">
+              <img src="img/body_sculp.jpg" width="238" height="238" alt="body sculp">
+            </div>
+            <h3>Body Sculp</h3>
+            <p>На тренировке применяется специальное оснащение, которое усиливает жиросжигание и обеспечивает максимальную проработку всех групп мышц.</p>
+          </li>
+          <li class="types__item">
+            <div class="types__image">
+              <img src="img/stretching.jpg" width="238" height="238" alt="stretching">
+            </div>
+            <h3>Stretching</h3>
+            <p>Разработанный комплекс упражнений растягивает мышцы и повышает их эластичность.</p>
+          </li>
+          <li class="types__item">
+            <div class="types__image">
+              <img src="img/step.jpg" width="238" height="238" alt="step">
+            </div>
+            <h3>Step</h3>
+            <p>На протяжении всего урока попеременно чередуются силовые, а также аэробные физические нагрузки, активно работают мышцы. Применяются степовые платформы.</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="timetable" id="timetable">
+      <h2>Раcписание занятий</h2>
+      <div class="timetable__image">
+        <img src="img/timetable.jpg" width="779" height="447" alt="Раписание">
+      </div>
+    </section>
+    <section class="price">
+      <div class="price__wrapper">
+        <h2>Прайс-лист</h2>
+        <ul class="price__list">
+          <li class="price__item">
+            <a href="#" class="price__link">
+              <h3>Тренажёрный зал</h3>
+            </a>
+          </li>
+          <li class="price__item">
+            <a href="#" class="price__link">
+              <h3>Фитнес-зал</h3>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="trainers">
+        <h2>Тренеры</h2>
+        <ul class="trainers__list">
+          <li class="trainers__item" tabindex="0">
+            <img src="img/trainer1.jpg" width="248" height="259" alt="Тренер">
+            <div class="trainers__description">
+              <h3>Тренер Имя</h3>
+            </div>
+          </li>
+          <li class="trainers__item" tabindex="0">
+            <img src="img/trainer2.jpg" width="248" height="259" alt="Тренер">
+            <div class="trainers__description">
+              <h3>Тренер Имя</h3>
+            </div>
+          </li>
+          <li class="trainers__item" tabindex="0">
+            <img src="img/trainer3.jpg" width="248" height="259" alt="Тренер">
+            <div class="trainers__description">
+              <h3>Тренер Имя</h3>
+            </div>
+          </li>
+          <li class="trainers__item" tabindex="0">
+            <img src="img/trainer4.jpg" width="248" height="259" alt="Тренер">
+            <div class="trainers__description">
+              <h3>Тренер Имя</h3>
+            </div>
+          </li>
+          <li class="trainers__item" tabindex="0">
+            <img src="img/trainer5.jpg" width="248" height="259" alt="Тренер">
+            <div class="trainers__description">
+              <h3>Тренер Имя</h3>
+            </div>
+          </li>
+          <li class="trainers__item" tabindex="0">
+            <img src="img/trainer6.jpg" width="248" height="259" alt="Тренер">
+            <div class="trainers__description">
+              <h3>Тренер Имя</h3>
+            </div>
+          </li>
+          <li class="trainers__item" tabindex="0">
+            <img src="img/trainer7.jpg" width="248" height="259" alt="Тренер">
+            <div class="trainers__description">
+              <h3>Тренер Имя</h3>
+            </div>
+          </li>
+          <li class="trainers__item" tabindex="0">
+            <img src="img/trainer8.jpg" width="248" height="259" alt="Тренер">
+            <div class="trainers__description">
+              <h3>Тренер Имя</h3>
+            </div>
+          </li>
+        </ul>
+    </section>
+    <section class="destination">
+      <h2 class="visually-hidden">Схема проезда</h2>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2397782.0465659164!2d32.10768893388661!3d54.063385514628834!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46d469ad1c8fd9e9%3A0x83b4a48a6e1e6aa0!2z0KTQuNGC0L3QtdGBLdC60LvRg9CxINCa0LXQvdCz0YPRgNGD!5e0!3m2!1sru!2sby!4v1601457260752!5m2!1sru!2sby" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+      <div class="destination__wrapper">
+        <div class="destination__adress">
+          <h3>Адрес:</h3>
+          <p>Гомель, проспект&nbspЛенина, 3</p>
+          <h3>Телефон:</h3>
+          <p><a href="tel:+375447218875" class="destination__phone">+37544 721-88-75</a></p>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="footer__wrapper">
+      <a href="index.html" class="logo">
+        <img src="img/logo_kangaroo.png" width="122" height="71" alt="Логотип фитнес-зала «Кенгуру»">
+      </a>
+      <nav class="footer__nav nav">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a href="#" class="nav__link">о нас</a>
+          </li>
+          <li class="nav__item">
+            <a href="#" class="nav__link">основные направления</a>
+          </li>
+          <li class="nav__item">
+            <a href="#" class="nav__link">расписание</a>
+          </li>
+          <li class="nav__item">
+            <a href="#" class="nav__link">прейскурант</a>
+          </li>
+          <li class="nav__item">
+            <a href="#" class="nav__link">тренеры</a>
+          </li>
+          <li class="nav__item">
+            <a href="#" class="nav__link">схема проезда</a>
+          </li>
+        </ul>
+      </nav>
+      <ul class="footer__social social">
+        <li class="social__item">
+          <a href="vk.com" class="social__link">
+            <img src="img/vk.svg" alt="Логотип Вконтакте">
+          </a>
+        </li>
+        <li>
+          <a href="vk.com" class="social__link">
+            <img src="img/instagram.svg" alt="Логотип Инстаграм">
+          </a>
+        </li>
+        <li>
+          <a href="vk.com" class="social__link">
+            <img src="img/viber.svg" alt="Логотип Вайбер">
+          </a>
+        </li>
+      </ul>
+    </div>
+  </footer>
 </body>
+
 </html>

@@ -1,3 +1,17 @@
-h1 {
-  color: red;
-}
+@import '~normalize.css/normalize';
+@import 'blocks/vars';
+@import 'blocks/mixins';
+@import 'blocks/fonts';
+@import 'blocks/global';
+@import 'blocks/main-screen';
+@import 'blocks/header';
+@import 'blocks/nav';
+@import 'blocks/promo';
+@import 'blocks/about-us';
+@import 'blocks/types';
+@import 'blocks/timetable';
+@import 'blocks/price';
+@import 'blocks/trainers';
+@import 'blocks/destination';
+@import 'blocks/footer';
+@import 'blocks/social';

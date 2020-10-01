@@ -1,0 +1,44 @@
+.header {
+  display: flex;
+  flex: 1 0 auto;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1366px;
+  box-sizing: border-box;
+  padding: 30px 100px 30px 100px;
+  margin: 0 auto;
+}
+
+.header__nav {
+  width: 790px;
+}
+
+.header p {
+  width: 180px;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+
+.header__working-hours {
+  font-family: "RobotoCondensedRegular", "Arial", cursive;
+  font-size: 16px;
+  line-height: 18px;
+  color: $white;
+  margin-bottom: 10px;
+}
+
+.header__phone {
+  font-family: "BebasNeueBold", "Arial", cursive;
+  font-size: 26px;
+  line-height: 30px;
+  letter-spacing: 1px;
+  color: $white;
+  text-decoration: none;
+
+  &:hover,
+  &:focus {
+    color: #ffd1fc;
+  }
+}

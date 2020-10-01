@@ -1,0 +1,48 @@
+@mixin list-reset() {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+@mixin visually-hidden() {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+@mixin desktop-header() {
+  padding: 0;
+  margin: 0;
+  font-family: "BebasNeueBold", "Arial", cursive;
+  font-size: 49px;
+  line-height: 49px;
+  letter-spacing: 0.03em;
+  color: $dark-blue;
+}
+
+@mixin tablet-header() {
+  padding: 0;
+  margin: 0;
+  font-family: "BebasNeueBold", "Arial", cursive;
+  font-size: 42px;
+  line-height: 42px;
+  letter-spacing: 0.03em;
+  color: $dark-blue;
+}
+
+@mixin mobile-header() {
+  padding: 0;
+  margin: 0;
+  font-family: "BebasNeueBold", "Arial", cursive;
+  font-size: 32px;
+  line-height: 32px;
+  letter-spacing: 0.03em;
+  color: $dark-blue;
+}
