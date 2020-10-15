@@ -1,13 +1,107 @@
 .main-screen {
-  width: 100%;
-  background-color: $black;
-  background-image: url("../img/background.jpg");
+  // width: 100%;
+  // background-color: $black;
+  // background-image: url("../img/background.jpg");
   background-repeat: no-repeat;
   background-position: center center;
-  background-size: 1918px 728px;
-  flex: 1 0 auto;
-  min-height: 728px;
+  background-size: auto;
+  // min-height: 728px;
+  min-height: 100vh;
+
+  overflow: hidden;
+  position: relative;
+  transform-style: preserve-3d;
+  perspective: 100px;
+  // display: flex;
+  // flex-direction: column;
 }
+
+.main-screen:after {
+  animation: rotate-up .5s 1.2s cubic-bezier(0, 0.5, 0, 1) forwards;
+  background: white;
+  content: "";
+  height: 30rem;
+  left: -5%;
+  position: absolute;
+    right: -5%;
+    top: 90%;
+          // transform: rotateZ(-2deg);
+          transform-origin: 0 0;
+  z-index: 0;
+}
+
+.main-screen:before {
+  animation: fade-slide-down 2s .5s cubic-bezier(0, 0.5, 0, 1) forwards;
+  background: linear-gradient(to bottom, rgba(0,0,0,0), rgba(#371a55, .8)),
+              url("../img/background.jpg") no-repeat bottom;
+  background-size: cover;
+    bottom: 0;
+  content: "";
+    left: 0;
+  opacity: 0;
+  position: absolute;
+    right: 0;
+    top: 0;
+  z-index: -1;
+}
+
+@keyframes fade-slide-down {
+  0% {
+    opacity: 0;
+            transform: translateY(-4rem);
+  }
+  100% {
+    opacity: 1;
+            transform: none;
+  }
+}
+
+@keyframes rotate-up {
+  100% {
+    transform: rotateZ(-1deg);
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// .main-screen {
+//   width: 100%;
+//   background-color: $black;
+//   background-image: url("../img/background.jpg");
+//   background-repeat: no-repeat;
+//   background-position: center center;
+//   background-size: auto;
+//   min-height: 728px;
+// }
+
+// @media (max-width: $tablet-width) {
+//   .main-screen {
+//     background-image: url("../img/background-tablet.jpg");
+//     background-size: auto;
+//     background-position: 0 -400px;
+//     min-height: 540px;
+//   }
+// }
+
+// @media (max-width: $mobile-width) {
+//   .main-screen {
+//     // background-image: url("../img/background-mobile.jpg");
+//     background-size: 100%;
+//     background-position: 0 -60px;
+//     min-height: 583px;
+//   }
+// }
 
 /*.main-screen__container {
   max-width: 1366px;

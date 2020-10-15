@@ -2,6 +2,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   max-width: 1366px;
   box-sizing: border-box;
   padding: 120px 100px;
@@ -12,6 +13,8 @@
   display: flex;
   flex-wrap: wrap;
   @include list-reset;
+  align-items: center;
+  justify-content: center;
 }
 
 .trainers__description {
@@ -48,13 +51,63 @@
   color: white;
 }
 
-
-.trainers__item:last-of-type {
+.trainers__item:nth-of-type(4n) {
   margin-right: 0;
 }
 
+// .trainers__item:last-of-type {
+//   margin-right: 0;
+// }
 
 .trainers h2 {
   @include desktop-header;
   margin-bottom: 40px;
+}
+
+@media (max-width: 1321px) {
+  .trainers__item:nth-of-type(4n) {
+    margin-right: 43px;
+  }
+}
+
+@media (max-width: $tablet-width) {
+  .trainers {
+    width: 768px;
+    padding: 75px 10px;
+  }
+
+  .trainers h2 {
+    @include tablet-header;
+    margin-bottom: 40px;
+  }
+
+  .trainers__item:nth-of-type(even) {
+    margin-right: 0;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .trainers {
+    width: auto;
+    padding: 65px 20px;
+  }
+
+  .trainers h2 {
+    @include mobile-header;
+    margin-bottom: 40px;
+  }
+
+  .trainers__item {
+    margin-right: 20px;
+  }
+}
+
+@media (max-width: 555px) {
+  .trainers__list {
+    width: 320px;
+  }
+
+  .trainers__item {
+    margin-right: 0;
+  }
 }

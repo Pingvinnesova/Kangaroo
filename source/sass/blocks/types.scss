@@ -6,6 +6,7 @@
 .types__wrapper {
   display: flex;
   flex-direction: column;
+  align-items: center;
   flex: 1 0 auto;
   max-width: 1366px;
   box-sizing: border-box;
@@ -20,6 +21,7 @@
 }
 
 .types__list {
+  width: 1170px;
   display: flex;
   align-items: flex-start;
   flex-wrap: wrap;
@@ -29,6 +31,7 @@
 .types__item {
   width: 240px;
   margin-right: 65px;
+  margin-bottom: 20px;
 }
 
 .types__item:last-of-type {
@@ -66,39 +69,70 @@
   text-align: center;
 }
 
+@media (max-width: $tablet-width) {
+  .types__wrapper {
+    width: 768px;
+    padding: 75px 10px;
+    align-items: center;
+  }
 
-/*
-.header__nav {
-  width: 790px;
-}
+  .types h2 {
+    @include tablet-header;
+    margin-bottom: 40px;
+  }
 
-.header p {
-  width: 180px;
-  margin: 0;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-end;
-}
+  .types__item h3 {
+    font-family: "BebasNeueRegular", "Arial", cursive;
+    font-size: 40px;
+    line-height: 48px;
+    margin-bottom: 20px;
+  }
 
-.header__working-hours {
-  font-family: "RobotoCondensedRegular", "Arial", cursive;
-  font-size: 16px;
-  line-height: 18px;
-  color: $white;
-  margin-bottom: 10px;
-}
+  .types__list {
+    width: 610px;
+    align-items: flex-start;
+    justify-content: center;
+    flex-wrap: wrap;
+    @include list-reset;
+  }
 
-.header__phone {
-  font-family: "BebasNeueBold", "Arial", cursive;
-  font-size: 26px;
-  line-height: 30px;
-  letter-spacing: 1px;
-  color: $white;
-  text-decoration: none;
+  .types__item {
+    margin-bottom: 30px;
+  }
 
-  &:hover,
-  &:focus {
-    color: #ffd1fc;
+  .types__item:nth-of-type(even) {
+    margin-right: 0;
   }
 }
-*/
+
+@media (max-width: $mobile-width) {
+  .types__wrapper {
+    width: 100%;
+    padding: 65px 20px;
+  }
+
+  .types h2 {
+    @include tablet-header;
+    margin-bottom: 40px;
+  }
+
+  .types__item h3 {
+    font-family: "BebasNeueRegular", "Arial", cursive;
+    font-size: 40px;
+    line-height: 48px;
+    margin-bottom: 10px;
+  }
+
+  .types__list {
+    width: 280px;
+  }
+
+  .types__item {
+    margin-right: 0;
+    margin-bottom: 30px;
+  }
+
+  .types__item:last-of-type {
+    margin-bottom: 0;
+  }
+}

@@ -1,4 +1,5 @@
 .gym {
+  position: relative;
   display: none;
   width: 500px;
   padding: 50px;
@@ -10,11 +11,53 @@
   transform: translate(-50%,-50%);
   z-index: 40;
   background-color: white;
+  flex-direction: column;
   border: 2px solid #1c3374;
+  overflow-y: auto;
+}
+
+.gym--show {
+  display: flex;
+  animation-name: bounce;
+  animation-duration: 0.7s;
 }
 
 .gym h2 {
   @include desktop-header;
   text-align: center;
   margin-bottom: 40px;
+}
+
+.gym__close {
+  content: "";
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 20px;
+  height: 20px;
+  background-color: transparent;
+  border: none;
+  background-image: url("../img/plus.svg");
+  cursor: pointer;
+  transform: rotate(45deg);
+  transition-duration: 200ms;
+  outline: none;
+
+  &:hover {
+    transform: rotate(315deg);
+  }
+}
+
+@keyframes bounce {
+    0% {
+        transform: translate(-50%, -2000px);
+    }
+
+    80% {
+        transform: translate(-50%, -30%);
+    }
+
+    100% {
+        transform: translate(-50%, -50%);
+    }
 }

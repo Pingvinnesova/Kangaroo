@@ -23,3 +23,38 @@
 .footer__social {
   width: 100px;
 }
+
+.footer__nav .nav__link {
+  display: block;
+}
+
+@media (max-width: $tablet-width) {
+  .footer__wrapper {
+    width: 768px;
+    padding: 25px 10px 25px 10px;
+    box-sizing: border-box;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer {
+    width: 100%;
+    padding: 0;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .footer {
+    width: auto;
+    padding: 0;
+  }
+
+  .footer__wrapper {
+    width: auto;
+    padding: 20px;
+  }
+
+  .footer__nav {
+    width: auto;
+  }
+}

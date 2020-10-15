@@ -13,35 +13,66 @@
 <body>
   <div class="main-screen">
     <header class="header">
-      <a href="index.html" class="logo">
-        <img src="img/logo_kangaroo.png" width="122" height="71" alt="Логотип фитнес-зала «Кенгуру»">
-      </a>
-      <nav class="header__nav nav">
-        <ul class="nav__list">
-          <li class="nav__item">
-            <a href="#" class="nav__link">о нас</a>
-          </li>
-          <li class="nav__item">
-            <a href="#" class="nav__link">основные направления</a>
-          </li>
-          <li class="nav__item">
-            <a href="#" class="nav__link">расписание</a>
-          </li>
-          <li class="nav__item">
-            <a href="#" class="nav__link">прейскурант</a>
-          </li>
-          <li class="nav__item">
-            <a href="#" class="nav__link">тренеры</a>
-          </li>
-          <li class="nav__item">
-            <a href="#" class="nav__link">схема проезда</a>
-          </li>
-        </ul>
-      </nav>
-      <p>
-        <span class="header__working-hours">ежедневно с 8 до 21:30</span>
-        <a href="tel:+375447218875" class="header__phone">+37544 721-88-75</a>
-      </p>
+      <div class="header__wrapper">
+        <a href="index.html" class="header__logo logo">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/logo_kangaroo-big.png">
+            <img src="img/logo_kangaroo-small.png" width="48" height="52" alt="Логотип фитнес-зала «Кенгуру»">
+          </picture>
+        </a>
+        <nav class="header__nav nav">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="#about-us" class="nav__link scroll-to">о нас</a>
+            </li>
+            <li class="nav__item">
+              <a href="#types" class="nav__link scroll-to">основные направления</a>
+            </li>
+            <li class="nav__item">
+              <a href="#timetable" class="nav__link scroll-to">расписание</a>
+            </li>
+            <li class="nav__item">
+              <a href="#price" class="nav__link scroll-to">прейскурант</a>
+            </li>
+            <li class="nav__item">
+              <a href="#trainers" class="nav__link scroll-to">тренеры</a>
+            </li>
+            <li class="nav__item">
+              <a href="#destination" class="nav__link scroll-to">схема проезда</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="header__menu-button">
+          <button class="header__menu-toggle" type="button">
+            <span class="visually-hidden">Открыть меню</span>
+            <span class="header__menu-toggle-bar"></span>
+          </button>
+        </div>
+        <p>
+          <span class="header__working-hours">ежедневно с 8 до 21:30</span>
+          <a href="tel:+375447218875" class="header__phone">+37544 721-88-75</a>
+        </p>
+      </div>
+      <ul class="header__hamburger">
+        <li class="header__hamburger-item">
+          <a href="#about-us" class="header__hamburger-link scroll-to">о нас</a>
+        </li>
+        <li class="header__hamburger-item">
+          <a href="#types" class="header__hamburger-link scroll-to">основные направления</a>
+        </li>
+        <li class="header__hamburger-item">
+          <a href="#timetable" class="header__hamburger-link scroll-to">расписание</a>
+        </li>
+        <li class="header__hamburger-item">
+          <a href="#price" class="header__hamburger-link scroll-to">прейскурант</a>
+        </li>
+        <li class="header__hamburger-item">
+          <a href="#trainers" class="header__hamburger-link scroll-to">тренеры</a>
+        </li>
+        <li class="header__hamburger-item">
+          <a href="#destination" class="header__hamburger-link scroll-to">схема проезда</a>
+        </li>
+      </ul>
     </header>
     <section class="promo">
       <div class="promo__text-wrapper">
@@ -49,24 +80,41 @@
         <h1>Фитнес клуб <span class="promo__title-name">«Кенгуру»</span></h1>
         <a class="promo__button scroll-to" href="#timetable">Расписание</a>
       </div>
-      <p>Быть всегда в форме - легко!</p>
+      <p class="animate-pop-in">Быть всегда в форме - легко!</p>
     </section>
   </div>
   <main>
-    <section class="about-us">
-        <div class="about-us__wrapper">
+    <section class="about-us" id="about-us">
+      <div class="about-us__wrapper">
           <div class="about-us__text">
-            <h2>Оптимальная эффективность и повышенный комфорт</h1>
+            <h2>Оптимальная эффективность и повышенный&nbsp;комфорт</h1>
             <p>
               <span>В «Кенгуру» осуществляют свою деятельность только высококвалифицированные и профессиональные тренеры. Они лично подберут вам необходимую нагрузку, подробно расскажут о каждом определенном виде тренировок и их пользе.</span> <span>После активного занятия вы на месте можете принять приятный расслабляющий душ в наших комфортабельных душевых кабинках.У нас предусмотрены раздевалки с закрывающимися шкафчиками.</span><span> Занимаясь с нами, вы станете стройными, подвижными и гибкими, ваши мышцы будут сильными и упругими. Вы повысите выносливость организма и укрепите свое здоровье.</span>
             </p>
           </div>
-          <div class="about-us__slider">
-            <img src="img/gym.jpg" width="649" height="497" alt="Тренажёрный зал">
+          <div class="about-us__slider slider">
+            <div class="slider__wrapper">
+              <div class="slider__slide slider__slide--active">
+                <img src="img/gym.jpg" width="649" height="497" alt="Тренажёрный зал">
+              </div>
+              <div class="slider__slide">
+                <img src="img/gym2.jpg" width="649" height="497" alt="Тренажёрный зал">
+              </div>
+              <div class="slider__slide">
+                <img src="img/gym3.jpg" width="649" height="497" alt="Тренажёрный зал">
+              </div>
+              <div id="btn-prev"></div>
+              <div id="btn-next"></div>
+            </div>
+            <div class="slider__dots-list">
+              <span class="slider__dot slider__dot--active"></span>
+              <span class="slider__dot"></span>
+              <span class="slider__dot"></span>
+            </div>
           </div>
-        </div>
+      </div>
     </section>
-    <section class="types">
+    <section class="types" id="types">
         <div class="types__wrapper">
           <h2>Основные направления</h2>
           <ul class="types__list">
@@ -118,117 +166,117 @@
               <th>Вск</th>
             </tr>
             <tr>
-              <td class="timetable__time">9:00</td>
-              <td></td>
-              <td>90x60x90<span>(Галина)</span></td>
-              <td></td>
-              <td>90x60x90<span>(Галина)</span></td>
-              <td></td>
-              <td class="timetable__time">11:00</td>
-              <td>Body Sculp<span>(Галина)</span></td>
-              <td></td>
+              <td class="timetable__time" tabindex="0">9:00</td>
+              <td tabindex="0"></td>
+              <td tabindex="0">90x60x90<span>(Галина)</span></td>
+              <td tabindex="0"></td>
+              <td tabindex="0">90x60x90<span>(Галина)</span></td>
+              <td tabindex="0"></td>
+              <td tabindex="0" class="timetable__time">11:00</td>
+              <td tabindex="0">Body Sculp<span>(Галина)</span></td>
+              <td tabindex="0"></td>
             </tr>
             <tr>
-              <td class="timetable__time">10:00</td>
-              <td>Body Sculp<span>(Галина)</span></td>
-              <td></td>
-              <td>Body Sculp<span>(Галина)</td>
-              <td></td>
-              <td>Body Sculp<span>(Галина)</td>
-              <td class="timetable__time">12:00</td>
-              <td></td>
-              <td>Step Active<span>(Наталья)</span></td>
+              <td class="timetable__time" tabindex="0">10:00</td>
+              <td tabindex="0">Body Sculp<span>(Галина)</span></td>
+              <td tabindex="0"></td>
+              <td tabindex="0">Body Sculp<span>(Галина)</td>
+              <td tabindex="0"></td>
+              <td tabindex="0">Body Sculp<span>(Галина)</td>
+              <td class="timetable__time" tabindex="0">12:00</td>
+              <td tabindex="0"></td>
+              <td tabindex="0">Step Active<span>(Наталья)</span></td>
             </tr>
             <tr>
-              <td class="timetable__time">11:00</td>
-              <td>Flex and Stretch<span>(Вероника)</span></td>
-              <td></td>
-              <td>Flex and Stretch<span>(Вероника)</span></td>
-              <td></td>
-              <td>Flex and Stretch<span>(Вероника)</span></td>
-              <td class="timetable__time">13:10</td>
-              <td></td>
-              <td>Step Active<span>(Наталья)</span></td>
+              <td class="timetable__time" tabindex="0">11:00</td>
+              <td tabindex="0">Flex and Stretch<span>(Вероника)</span></td>
+              <td tabindex="0"></td>
+              <td tabindex="0">Flex and Stretch<span>(Вероника)</span></td>
+              <td tabindex="0"></td>
+              <td tabindex="0">Flex and Stretch<span>(Вероника)</span></td>
+              <td class="timetable__time" tabindex="0">13:10</td>
+              <td tabindex="0"></td>
+              <td tabindex="0">Step Active<span>(Наталья)</span></td>
             </tr>
             <tr>
-              <td class="timetable__time">15:00</td>
-              <td>Body Training<span>(Галина)</span></td>
-              <td></td>
-              <td>Body Training<span>(Галина)</td>
-              <td></td>
-              <td>Body Training<span>(Галина)</td>
-              <td class="timetable__time">14:00</td>
-              <td></td>
-              <td></td>
+              <td class="timetable__time" tabindex="0">15:00</td>
+              <td tabindex="0">Body Training<span>(Галина)</span></td>
+              <td tabindex="0"></td>
+              <td tabindex="0">Body Training<span>(Галина)</td>
+              <td tabindex="0"></td>
+              <td tabindex="0">Body Training<span>(Галина)</td>
+              <td class="timetable__time" tabindex="0">14:00</td>
+              <td tabindex="0"></td>
+              <td tabindex="0"></td>
             </tr>
             <tr>
-              <td class="timetable__time">16:00</td>
-              <td></td>
-              <td>Body Training<span>(Галина)</span></td>
-              <td></td>
-              <td>Body Training<span>(Галина)</span></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
+              <td class="timetable__time" tabindex="0">16:00</td>
+              <td tabindex="0"></td>
+              <td tabindex="0">Body Training<span>(Галина)</span></td>
+              <td tabindex="0"></td>
+              <td tabindex="0">Body Training<span>(Галина)</span></td>
+              <td tabindex="0"></td>
+              <td tabindex="0"></td>
+              <td tabindex="0"></td>
+              <td tabindex="0"></td>
             </tr>
             <tr>
-              <td class="timetable__time">17:00</td>
-              <td>Силовая аэробика<span>(Дарья)</span></td>
-              <td></td>
-              <td>Силовая аэробика<span>(Дарья)</span></td>
-              <td></td>
-              <td>Силовая аэробика<span>(Дарья)</span></td>
-              <td></td>
-              <td></td>
-              <td></td>
+              <td class="timetable__time" tabindex="0">17:00</td>
+              <td tabindex="0">Силовая аэробика<span>(Дарья)</span></td>
+              <td tabindex="0"></td>
+              <td tabindex="0">Силовая аэробика<span>(Дарья)</span></td>
+              <td tabindex="0"></td>
+              <td tabindex="0">Силовая аэробика<span>(Дарья)</span></td>
+              <td tabindex="0"></td>
+              <td tabindex="0"></td>
+              <td tabindex="0"></td>
             </tr>
             <tr>
-              <td class="timetable__time">18:00</td>
-              <td>Cardio Body<span>(Татьяна)</span></td>
-              <td>Body Sculp<span>(Галина)</span></td>
-              <td>Cardio Body<span>(Татьяна)</span></td>
-              <td>Body Sculp<span>(Галина)</span></td>
-              <td>Cardio Body<span>(Татьяна)</span></td>
-              <td></td>
-              <td></td>
-              <td></td>
+              <td class="timetable__time" tabindex="0">18:00</td>
+              <td tabindex="0">Cardio Body<span>(Татьяна)</span></td>
+              <td tabindex="0">Body Sculp<span>(Галина)</span></td>
+              <td tabindex="0">Cardio Body<span>(Татьяна)</span></td>
+              <td tabindex="0">Body Sculp<span>(Галина)</span></td>
+              <td tabindex="0">Cardio Body<span>(Татьяна)</span></td>
+              <td tabindex="0"></td>
+              <td tabindex="0"></td>
+              <td tabindex="0"></td>
             </tr>
             <tr>
-              <td class="timetable__time">19:00</td>
-              <td>Zumba<span>(Татьяна)</span></td>
-              <td>Коррекция фигуры<span>(Наталья)</span></td>
-              <td>Zumba<span>(Татьяна)</span></td>
-              <td>Коррекция фигуры<span>(Наталья)</span></td>
-              <td>Zumba<span>(Татьяна)</span></td>
-              <td></td>
-              <td></td>
-              <td></td>
+              <td class="timetable__time" tabindex="0">19:00</td>
+              <td tabindex="0">Zumba<span>(Татьяна)</span></td>
+              <td tabindex="0">Коррекция фигуры<span>(Наталья)</span></td>
+              <td tabindex="0">Zumba<span>(Татьяна)</span></td>
+              <td tabindex="0">Коррекция фигуры<span>(Наталья)</span></td>
+              <td tabindex="0">Zumba<span>(Татьяна)</span></td>
+              <td tabindex="0"></td>
+              <td tabindex="0"></td>
+              <td tabindex="0"></td>
             </tr>
             <tr>
-              <td class="timetable__time">20:00</td>
-              <td>Body шейпинг<span>(Наталья)</span></td>
-              <td>Step Active<span>(Наталья)</span></td>
-              <td>Body шейпинг<span>(Наталья)</span></td>
-              <td>Step Active<span>(Наталья)</span></td>
-              <td>Step Active<span>(Наталья)</span></td>
-              <td></td>
-              <td></td>
-              <td></td>
+              <td class="timetable__time" tabindex="0">20:00</td>
+              <td tabindex="0">Body шейпинг<span>(Наталья)</span></td>
+              <td tabindex="0">Step Active<span>(Наталья)</span></td>
+              <td tabindex="0">Body шейпинг<span>(Наталья)</span></td>
+              <td tabindex="0">Step Active<span>(Наталья)</span></td>
+              <td tabindex="0">Step Active<span>(Наталья)</span></td>
+              <td tabindex="0"></td>
+              <td tabindex="0"></td>
+              <td tabindex="0"></td>
             </tr>
         </table>
       </div>
     </section>
-    <section class="price">
+    <section class="price" id="price">
         <div class="price__wrapper">
           <h2>Прайс-лист</h2>
           <ul class="price__list">
-            <li class="price__item">
+            <li class="price__item price__item--gym">
               <a href="#" class="price__link">
                 <h3>Тренажёрный зал</h3>
               </a>
             </li>
-            <li class="price__item">
+            <li class="price__item price__item--fitness">
               <a href="#" class="price__link">
                 <h3>Фитнес-зал</h3>
               </a>
@@ -236,7 +284,7 @@
           </ul>
         </div>
     </section>
-    <section class="trainers">
+    <section class="trainers" id="trainers">
         <h2>Тренеры</h2>
         <ul class="trainers__list">
           <li class="trainers__item" tabindex="0">
@@ -289,43 +337,51 @@
           </li>
         </ul>
     </section>
-    <section class="destination">
+    <section class="destination" id="destination">
       <h2 class="visually-hidden">Схема проезда</h2>
       <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2397782.0465659164!2d32.10768893388661!3d54.063385514628834!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46d469ad1c8fd9e9%3A0x83b4a48a6e1e6aa0!2z0KTQuNGC0L3QtdGBLdC60LvRg9CxINCa0LXQvdCz0YPRgNGD!5e0!3m2!1sru!2sby!4v1601457260752!5m2!1sru!2sby"frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
       <div class="destination__wrapper">
         <div class="destination__adress">
-          <h3>Адрес:</h3>
-          <p>Гомель, проспект&nbspЛенина, 3</p>
-          <h3>Телефон:</h3>
-          <p><a href="tel:+375447218875" class="destination__phone">+37544 721-88-75</a></p>
+          <div class="destination__container">
+            <h3>Адрес:</h3>
+            <p>Гомель, проспект&nbspЛенина, 3</p>
+            <h3>Телефон:</h3>
+            <p><a href="tel:+375447218875" class="destination__phone">+37544 721-88-75</a></p>
+          </div>
+          <button class="destination__close" type="button">
+            <span class="visually-hidden">Свернуть</span>
+          </button>
         </div>
       </div>
     </section>
   </main>
   <footer class="footer">
     <div class="footer__wrapper">
-      <a href="index.html" class="logo">
-        <img src="img/logo_kangaroo.png" width="122" height="71" alt="Логотип фитнес-зала «Кенгуру»">
-      </a>
+      <a href="index.html" class="footer__logo logo">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/logo_kangaroo-big.png">
+            <img src="img/logo_kangaroo-small.png" width="48" height="52" alt="Логотип фитнес-зала «Кенгуру»">
+          </picture>
+        </a>
       <nav class="footer__nav nav">
         <ul class="nav__list">
           <li class="nav__item">
-            <a href="#" class="nav__link">о нас</a>
+            <a href="#about-us" class="nav__link scroll-to">о нас</a>
           </li>
           <li class="nav__item">
-            <a href="#" class="nav__link">основные направления</a>
+            <a href="#types" class="nav__link scroll-to">основные направления</a>
           </li>
           <li class="nav__item">
-            <a href="#" class="nav__link">расписание</a>
+            <a href="#timetable" class="nav__link scroll-to">расписание</a>
           </li>
           <li class="nav__item">
-            <a href="#" class="nav__link">прейскурант</a>
+            <a href="#price" class="nav__link scroll-to">прейскурант</a>
           </li>
           <li class="nav__item">
-            <a href="#" class="nav__link">тренеры</a>
+            <a href="#trainers" class="nav__link scroll-to">тренеры</a>
           </li>
           <li class="nav__item">
-            <a href="#" class="nav__link">схема проезда</a>
+            <a href="#destination" class="nav__link scroll-to">схема проезда</a>
           </li>
         </ul>
       </nav>
@@ -350,7 +406,11 @@
   </footer>
   <div class="gym">
     <h2>Тренажёрный зал</h2>
+    <button class="gym__close" type="button">
+      <span class="visually-hidden">Свернуть</span>
+    </button>
   </div>
+<script src="js/script.js"></script>
 </body>
 
 </html>

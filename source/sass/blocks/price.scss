@@ -54,6 +54,7 @@
   background-size: 350px 439px;
   border: 7px solid transparent;
   cursor: pointer;
+  transition-duration: 200ms;
 
   &:hover,
   &:focus {
@@ -75,3 +76,63 @@
   padding: auto;
 }
 
+@media (max-width: $tablet-width) {
+  .price__wrapper {
+    width: 768px;
+    padding: 75px 10px;
+  }
+
+  .price h2 {
+    @include tablet-header;
+    margin-bottom: 40px;
+  }
+
+  .price__item {
+    margin-right: 70px;
+  }
+
+  .price__item:last-of-type .price__link {
+    background-image: none;
+  }
+
+  .price__link {
+    width: 280px;
+    height: 350px;
+    background-color: rgba(#15001b, 0.6);
+    background-image: none;
+  }
+
+  .price__item h3 {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .price {
+    background-position: center -90px;
+  }
+
+  .price__wrapper {
+    width: 280px;
+    padding: 65px 20px;
+  }
+
+  .price h2 {
+    @include mobile-header;
+    margin-bottom: 40px;
+  }
+
+  .price__item {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+
+  .price__link {
+    width: 240px;
+    height: 280px;
+  }
+
+  .price__item h3 {
+    font-size: 25px;
+  }
+}
