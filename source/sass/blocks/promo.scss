@@ -183,28 +183,3 @@
     top: 102px;
   }
 }
-
-@keyframes move-light {
-  0% {
-    transform: translateX(-4em) skew(-45deg);
-  }
-  100% {
-    transform: translateX(27em) skew(-45deg);
-  }
-}
-
-@keyframes pop-in {
-  0% {
-    opacity: 0;
-      transform: translateY(-4rem) scale(.8);
-  }
-  100% {
-    opacity: 1;
-      transform: none;
-  }
-}
-
-.animate-pop-in {
-  animation: pop-in .6s cubic-bezier(0, 0.9, 0.3, 1.2) forwards;
-  opacity: 0;
-}

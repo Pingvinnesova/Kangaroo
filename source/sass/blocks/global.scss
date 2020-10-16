@@ -22,6 +22,12 @@ img {
   @include visually-hidden;
 }
 
+.animate-pop-in {
+  animation: no-transform .6s cubic-bezier(0, 0.9, 0.3, 1.2) forwards;
+  opacity: 0;
+  transform: translateY(-4rem) scale(.8);
+}
+
 /*.wrapper {
   position: relative;
 }

@@ -1,0 +1,25 @@
+.down-arrow {
+  animation: pulse 2s 5s ease-out infinite;
+  position: absolute;
+  bottom: 4vh;
+  left: 0;
+  right: 0;
+  text-align: center;
+  z-index: 10;
+}
+
+.down-arrow__button {
+  display: inline-block;
+  background-color: transparent;
+  background-image: url("../img/downarrow.png");
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: 33px 22px;
+  width: 33px;
+  height: 22px;
+  border: none;
+  animation: no-transform 1s 1s ease-out forwards;
+  transform: translateY(4rem);
+  opacity: 0;
+  cursor: pointer;
+}
